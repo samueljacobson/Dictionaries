@@ -45,6 +45,11 @@ namespace Dictionaries
             {
                 Console.WriteLine(drink.Key);
                 Console.WriteLine(drink.Value);
+
+                if (drink.Value == "Ginger Ale")    //to print specific key (or value)
+                {
+                    Console.WriteLine(drink.Key);
+                }
             }
 
 
@@ -104,12 +109,12 @@ namespace Dictionaries
                 {"warthog", 2},
                 {"ostrich", 4}
             };
-            foreach(KeyValuePair<string,int> animals in zooAnimals)
-            {
-                List<int> animalPop = new List<int>(animals.Value);
-                animalPop.Sort();
-                Console.WriteLine(animals.Key[animalPop.Count - 1]);
-            }
+            //foreach(KeyValuePair<string,int> animals in zooAnimals)
+            //{
+            //    List<int> animalPop = new List<int>(animals.Value);
+            //    animalPop.Sort();
+            //    Console.WriteLine(animals.Key[animalPop.Count - 1]);
+            //}
         }
     }
 }
